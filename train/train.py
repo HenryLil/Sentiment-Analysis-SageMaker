@@ -65,7 +65,7 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
             batch_X = batch_X.to(device)
             batch_y = batch_y.to(device)
             
-            model.zero_grad()
+            optimizer.zero_grad()
             #forward
             out = model(batch_X)
             #loss and backward

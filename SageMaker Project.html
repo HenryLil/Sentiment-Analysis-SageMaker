@@ -13175,16 +13175,16 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>mkdir: cannot create directory ‘../data’: File exists
---2018-12-14 15:56:30--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+--2018-12-16 10:12:37--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 Resolving ai.stanford.edu (ai.stanford.edu)... 171.64.68.10
 Connecting to ai.stanford.edu (ai.stanford.edu)|171.64.68.10|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 84125825 (80M) [application/x-gzip]
 Saving to: ‘../data/aclImdb_v1.tar.gz’
 
-../data/aclImdb_v1. 100%[===================&gt;]  80.23M  10.2MB/s    in 13s     
+../data/aclImdb_v1. 100%[===================&gt;]  80.23M  10.3MB/s    in 9.7s    
 
-2018-12-14 15:56:43 (6.13 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
+2018-12-16 10:12:47 (8.25 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
 
 </pre>
 </div>
@@ -13376,8 +13376,8 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>I usually try to be professional and constructive when I criticize movies, but my GOD!!! This was THE worst movie I have ever seen. Bad acting, bad effects, bad script, bad everything! &lt;br /&gt;&lt;br /&gt;The plot follows a group of teen cliche&#39;s on their way to a rave (that takes place in broad daylight) at a remote island. However, when the group arrives, all they find is an empty dance floor and bloody clothes. Determined to find out what happened to the rest of the party-goers, the clan set&#39;s off on a mission through a zombie-infested forest. During this crusade, they are aided by a police chick and a sea captain that just happens to have the right number of weapons to give to each of the kids. They also meet up with Jonathan Cherry and some other survivors. Basically the rest of the movie is a collection of poorly directed action sequences including a far too long shootout outside of the &#34;house of the dead.&#34; This fight came complete with cheesy Hollywood violence, redundant clips from the HOTD video game, and sloppy matrix-esque camera rotations. One of the character&#39;s even volunteers to sacrifice himself to save the others. Why? Not because he was noble and brave, but because part of his face got scarred by acid a zombie spat on him after he continued to beat the creature long after it had been disabled! I&#39;m supposed to feel sorry for this guy?!?&lt;br /&gt;&lt;br /&gt;To sum it all up, there is absolutely no point in seeing this movie unless you want to see for yourself just how terrible it is. The theater I was in was more dead than the zombies on the screen, and I&#39;m sure the money I wasted seeing this piece of sh*t could easily cover the costs it took to make it. GRADE: F
-0
+<pre>I definitely recommend reading the book prior to watching the film. This book won National Book Council Award in 1978 and is a very gripping read (pun not intended). It&#39;s not too difficult to read for those out there that don&#39;t read often so don&#39;t be afraid! The book seems to capture the passion of the relationships more so than the movie and the movie will make more sense after reading the book. Having grown up in Melbourne I could really relate to this book and movie. Very few Australian female writers were around the in the 70&#39;s therefore very little is documented about the way of life for a women in an urban city in Australia during this era or class. It&#39;s a precious piece of Melbourne history. It&#39;s a shame that it is documented as some sort of 80&#39;s soft porn movie. It&#39;s far from that and as the other reviewer has mentioned please do not read the DVD jacket, it does not represent what the movie is about at all. Those that rent the movie based on this description will only be disappointed. Just remember this movie was made in 1982, so don&#39;t expect the Hollywood over dramatization that they seem to incorporate these days. This is what I like about it. It&#39;s also great seeing Noni Hazlehurst in this role, she is just fantastic as Nora and it&#39;s great watching her really acting, for if you&#39;re close to my age you will best remember her for her stints on Playschool and Better Homes and Gardens. Who knew she hid this talent? This movie will give you an entirely new impression of her. A classic Australian Story!
+1
 </pre>
 </div>
 </div>
@@ -13396,7 +13396,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -13434,7 +13434,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Apply review_to_words to a review (train_X[100] or any other review)</span>
@@ -13451,104 +13451,136 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;rememb&#39;,
- &#39;pretti&#39;,
- &#39;low&#39;,
- &#39;regard&#39;,
- &#39;ventur&#39;,
- &#39;like&#39;,
- &#39;first&#39;,
- &#39;releas&#39;,
- &#39;jame&#39;,
- &#39;jim&#39;,
- &#39;belushi&#39;,
- &#39;hammi&#39;,
- &#39;kid&#39;,
- &#39;actress&#39;,
- &#39;cheesi&#39;,
- &#39;titl&#39;,
- &#39;john&#39;,
- &#39;hugh&#39;,
- &#39;formula&#39;,
- &#39;paid&#39;,
- &#39;see&#39;,
- &#39;15&#39;,
- &#39;year&#39;,
- &#39;ago&#39;,
- &#39;got&#39;,
- &#39;caught&#39;,
+<pre>[&#39;definit&#39;,
+ &#39;recommend&#39;,
+ &#39;read&#39;,
+ &#39;book&#39;,
+ &#39;prior&#39;,
  &#39;watch&#39;,
- &#39;wast&#39;,
- &#39;away&#39;,
- &#39;sunday&#39;,
- &#39;afternoon&#39;,
- &#39;hit&#39;,
- &#39;coupl&#39;,
- &#39;level&#39;,
- &#39;fairi&#39;,
- &#39;tale&#39;,
- &#39;part&#39;,
- &#39;pretti&#39;,
- &#39;woman&#39;,
- &#39;part&#39;,
- &#39;revers&#39;,
- &#39;pretti&#39;,
- &#39;woman&#39;,
- &#39;vulner&#39;,
- &#39;elizabeth&#39;,
- &#39;perkin&#39;,
- &#39;miracl&#39;,
- &#39;42nd&#39;,
- &#39;street&#39;,
- &#39;like&#39;,
- &#39;perform&#39;,
- &#39;kelli&#39;,
- &#39;lynch&#39;,
- &#39;escap&#39;,
- &#39;gentli&#39;,
- &#39;pull&#39;,
- &#39;nice&#39;,
- &#39;string&#39;,
- &#39;pretti&#39;,
- &#39;hard&#39;,
- &#39;fall&#39;,
- &#39;stori&#39;,
- &#39;develop&#39;,
- &#39;crush&#39;,
- &#39;kelli&#39;,
- &#39;lynch&#39;,
- &#39;identifi&#39;,
- &#39;jame&#39;,
- &#39;belushi&#39;,
- &#39;dislik&#39;,
- &#39;stiff&#39;,
- &#39;bad&#39;,
- &#39;guy&#39;,
- &#39;boyfriend&#39;,
- &#39;laugh&#39;,
- &#39;curley&#39;,
- &#39;sue&#39;,
- &#39;line&#39;,
- &#39;up&#39;,
- &#39;down&#39;,
- &#39;happi&#39;,
- &#39;end&#39;,
- &#39;kind&#39;,
- &#39;messag&#39;,
- &#39;want&#39;,
- &#39;hear&#39;,
- &#39;go&#39;,
- &#39;ahead&#39;,
- &#39;wast&#39;,
- &#39;time&#39;,
+ &#39;film&#39;,
+ &#39;book&#39;,
+ &#39;nation&#39;,
+ &#39;book&#39;,
+ &#39;council&#39;,
+ &#39;award&#39;,
+ &#39;1978&#39;,
+ &#39;grip&#39;,
+ &#39;read&#39;,
+ &#39;pun&#39;,
+ &#39;intend&#39;,
+ &#39;difficult&#39;,
+ &#39;read&#39;,
+ &#39;read&#39;,
+ &#39;often&#39;,
+ &#39;afraid&#39;,
+ &#39;book&#39;,
+ &#39;seem&#39;,
+ &#39;captur&#39;,
+ &#39;passion&#39;,
+ &#39;relationship&#39;,
  &#39;movi&#39;,
- &#39;worth&#39;]</pre>
+ &#39;movi&#39;,
+ &#39;make&#39;,
+ &#39;sens&#39;,
+ &#39;read&#39;,
+ &#39;book&#39;,
+ &#39;grown&#39;,
+ &#39;melbourn&#39;,
+ &#39;could&#39;,
+ &#39;realli&#39;,
+ &#39;relat&#39;,
+ &#39;book&#39;,
+ &#39;movi&#39;,
+ &#39;australian&#39;,
+ &#39;femal&#39;,
+ &#39;writer&#39;,
+ &#39;around&#39;,
+ &#39;70&#39;,
+ &#39;therefor&#39;,
+ &#39;littl&#39;,
+ &#39;document&#39;,
+ &#39;way&#39;,
+ &#39;life&#39;,
+ &#39;women&#39;,
+ &#39;urban&#39;,
+ &#39;citi&#39;,
+ &#39;australia&#39;,
+ &#39;era&#39;,
+ &#39;class&#39;,
+ &#39;preciou&#39;,
+ &#39;piec&#39;,
+ &#39;melbourn&#39;,
+ &#39;histori&#39;,
+ &#39;shame&#39;,
+ &#39;document&#39;,
+ &#39;sort&#39;,
+ &#39;80&#39;,
+ &#39;soft&#39;,
+ &#39;porn&#39;,
+ &#39;movi&#39;,
+ &#39;far&#39;,
+ &#39;review&#39;,
+ &#39;mention&#39;,
+ &#39;pleas&#39;,
+ &#39;read&#39;,
+ &#39;dvd&#39;,
+ &#39;jacket&#39;,
+ &#39;repres&#39;,
+ &#39;movi&#39;,
+ &#39;rent&#39;,
+ &#39;movi&#39;,
+ &#39;base&#39;,
+ &#39;descript&#39;,
+ &#39;disappoint&#39;,
+ &#39;rememb&#39;,
+ &#39;movi&#39;,
+ &#39;made&#39;,
+ &#39;1982&#39;,
+ &#39;expect&#39;,
+ &#39;hollywood&#39;,
+ &#39;dramat&#39;,
+ &#39;seem&#39;,
+ &#39;incorpor&#39;,
+ &#39;day&#39;,
+ &#39;like&#39;,
+ &#39;also&#39;,
+ &#39;great&#39;,
+ &#39;see&#39;,
+ &#39;noni&#39;,
+ &#39;hazlehurst&#39;,
+ &#39;role&#39;,
+ &#39;fantast&#39;,
+ &#39;nora&#39;,
+ &#39;great&#39;,
+ &#39;watch&#39;,
+ &#39;realli&#39;,
+ &#39;act&#39;,
+ &#39;close&#39;,
+ &#39;age&#39;,
+ &#39;best&#39;,
+ &#39;rememb&#39;,
+ &#39;stint&#39;,
+ &#39;playschool&#39;,
+ &#39;better&#39;,
+ &#39;home&#39;,
+ &#39;garden&#39;,
+ &#39;knew&#39;,
+ &#39;hid&#39;,
+ &#39;talent&#39;,
+ &#39;movi&#39;,
+ &#39;give&#39;,
+ &#39;entir&#39;,
+ &#39;new&#39;,
+ &#39;impress&#39;,
+ &#39;classic&#39;,
+ &#39;australian&#39;,
+ &#39;stori&#39;]</pre>
 </div>
 
 </div>
@@ -13888,7 +13920,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use this cell to examine one of the processed reviews to make sure everything is working as intended.</span>
@@ -13994,7 +14026,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14018,7 +14050,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sagemaker</span>
@@ -14038,7 +14070,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_data</span> <span class="o">=</span> <span class="n">sagemaker_session</span><span class="o">.</span><span class="n">upload_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">bucket</span><span class="o">=</span><span class="n">bucket</span><span class="p">,</span> <span class="n">key_prefix</span><span class="o">=</span><span class="n">prefix</span><span class="p">)</span>
@@ -14074,7 +14106,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pygmentize train/model.py
@@ -14145,7 +14177,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
@@ -14179,7 +14211,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">epochs</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">loss_fn</span><span class="p">,</span> <span class="n">device</span><span class="p">):</span>
@@ -14192,7 +14224,7 @@ These are quite general words you would expect to see in a movie review</p>
             <span class="n">batch_X</span> <span class="o">=</span> <span class="n">batch_X</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
             <span class="n">batch_y</span> <span class="o">=</span> <span class="n">batch_y</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
             
-            <span class="n">model</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+            <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
             <span class="c1">#forward</span>
             <span class="n">out</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">batch_X</span><span class="p">)</span>
             <span class="c1">#loss and backward</span>
@@ -14222,7 +14254,7 @@ These are quite general words you would expect to see in a movie review</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
@@ -14250,11 +14282,11 @@ These are quite general words you would expect to see in a movie review</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch: 1, BCELoss: 0.69243483543396
-Epoch: 2, BCELoss: 0.6838963270187378
-Epoch: 3, BCELoss: 0.6765957593917846
-Epoch: 4, BCELoss: 0.6687045335769654
-Epoch: 5, BCELoss: 0.6594485998153686
+<pre>Epoch: 1, BCELoss: 0.69384845495224
+Epoch: 2, BCELoss: 0.6855962038040161
+Epoch: 3, BCELoss: 0.6788449287414551
+Epoch: 4, BCELoss: 0.6717065811157227
+Epoch: 5, BCELoss: 0.6635201454162598
 </pre>
 </div>
 </div>
@@ -14283,7 +14315,7 @@ Epoch: 5, BCELoss: 0.6594485998153686
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sagemaker.pytorch</span> <span class="k">import</span> <span class="n">PyTorch</span>
@@ -14307,7 +14339,7 @@ Epoch: 5, BCELoss: 0.6594485998153686
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s1">&#39;training&#39;</span><span class="p">:</span> <span class="n">input_data</span><span class="p">})</span>
@@ -14327,7 +14359,7 @@ Epoch: 5, BCELoss: 0.6594485998153686
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:sagemaker:Creating training-job with name: sagemaker-pytorch-2018-12-14-16-23-27-279
+<pre>INFO:sagemaker:Creating training-job with name: sagemaker-pytorch-2018-12-16-10-16-29-190
 </pre>
 </div>
 </div>
@@ -14338,25 +14370,25 @@ Epoch: 5, BCELoss: 0.6594485998153686
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2018-12-14 16:23:28 Starting - Starting the training job...
-2018-12-14 16:23:43 Starting - Launching requested ML instances......
-2018-12-14 16:24:39 Starting - Preparing the instances for training.........
-2018-12-14 16:26:21 Downloading - Downloading input data...
-2018-12-14 16:26:30 Training - Downloading the training image..
+<pre>2018-12-16 10:16:30 Starting - Starting the training job...
+2018-12-16 10:16:34 Starting - Launching requested ML instances......
+2018-12-16 10:17:32 Starting - Preparing the instances for training......
+2018-12-16 10:18:48 Downloading - Downloading input data
+2018-12-16 10:18:48 Training - Downloading the training image.......
 <span class="ansi-red-fg">bash: cannot set terminal process group (-1): Inappropriate ioctl for device</span>
 <span class="ansi-red-fg">bash: no job control in this shell</span>
-<span class="ansi-red-fg">2018-12-14 16:27:05,163 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
-<span class="ansi-red-fg">2018-12-14 16:27:05,187 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
-<span class="ansi-red-fg">2018-12-14 16:27:06,595 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
-<span class="ansi-red-fg">2018-12-14 16:27:06,877 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
+<span class="ansi-red-fg">2018-12-16 10:20:03,946 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
+<span class="ansi-red-fg">2018-12-16 10:20:03,980 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
+<span class="ansi-red-fg">2018-12-16 10:20:03,988 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
+<span class="ansi-red-fg">2018-12-16 10:20:04,270 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
 <span class="ansi-red-fg">Generating setup.py</span>
-<span class="ansi-red-fg">2018-12-14 16:27:06,878 sagemaker-containers INFO     Generating setup.cfg</span>
-<span class="ansi-red-fg">2018-12-14 16:27:06,878 sagemaker-containers INFO     Generating MANIFEST.in</span>
-<span class="ansi-red-fg">2018-12-14 16:27:06,878 sagemaker-containers INFO     Installing module with the following command:</span>
+<span class="ansi-red-fg">2018-12-16 10:20:04,270 sagemaker-containers INFO     Generating setup.cfg</span>
+<span class="ansi-red-fg">2018-12-16 10:20:04,270 sagemaker-containers INFO     Generating MANIFEST.in</span>
+<span class="ansi-red-fg">2018-12-16 10:20:04,270 sagemaker-containers INFO     Installing module with the following command:</span>
 <span class="ansi-red-fg">/usr/bin/python -m pip install -U . -r requirements.txt</span>
 <span class="ansi-red-fg">Processing /opt/ml/code</span>
-<span class="ansi-red-fg">Collecting pandas (from -r requirements.txt (line 1))
-  Downloading https://files.pythonhosted.org/packages/5d/d4/6e9c56a561f1d27407bf29318ca43f36ccaa289271b805a30034eb3a8ec4/pandas-0.23.4-cp35-cp35m-manylinux1_x86_64.whl (8.7MB)</span>
+<span class="ansi-red-fg">Collecting pandas (from -r requirements.txt (line 1))</span>
+<span class="ansi-red-fg">  Downloading https://files.pythonhosted.org/packages/5d/d4/6e9c56a561f1d27407bf29318ca43f36ccaa289271b805a30034eb3a8ec4/pandas-0.23.4-cp35-cp35m-manylinux1_x86_64.whl (8.7MB)</span>
 <span class="ansi-red-fg">Requirement already up-to-date: numpy in /usr/local/lib/python3.5/dist-packages (from -r requirements.txt (line 2)) (1.15.4)</span>
 <span class="ansi-red-fg">Collecting nltk (from -r requirements.txt (line 3))
   Downloading https://files.pythonhosted.org/packages/6f/ed/9c755d357d33bc1931e157f537721efb5b88d2c583fe593cc09603076cc3/nltk-3.4.zip (1.4MB)</span>
@@ -14365,11 +14397,11 @@ Epoch: 5, BCELoss: 0.6594485998153686
 <span class="ansi-red-fg">Collecting html5lib (from -r requirements.txt (line 5))
   Downloading https://files.pythonhosted.org/packages/a5/62/bbd2be0e7943ec8504b517e62bab011b4946e1258842bc159e5dfde15b96/html5lib-1.0.1-py2.py3-none-any.whl (117kB)</span>
 <span class="ansi-red-fg">Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.5.0 in /usr/local/lib/python3.5/dist-packages (from pandas-&gt;-r requirements.txt (line 1)) (2.7.5)</span>
-<span class="ansi-red-fg">Collecting pytz&gt;=2011k (from pandas-&gt;-r requirements.txt (line 1))</span>
-<span class="ansi-red-fg">  Downloading https://files.pythonhosted.org/packages/f8/0e/2365ddc010afb3d79147f1dd544e5ee24bf4ece58ab99b16fbb465ce6dc0/pytz-2018.7-py2.py3-none-any.whl (506kB)</span>
+<span class="ansi-red-fg">Collecting pytz&gt;=2011k (from pandas-&gt;-r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/f8/0e/2365ddc010afb3d79147f1dd544e5ee24bf4ece58ab99b16fbb465ce6dc0/pytz-2018.7-py2.py3-none-any.whl (506kB)</span>
 <span class="ansi-red-fg">Requirement already satisfied, skipping upgrade: six in /usr/local/lib/python3.5/dist-packages (from nltk-&gt;-r requirements.txt (line 3)) (1.11.0)</span>
-<span class="ansi-red-fg">Collecting singledispatch (from nltk-&gt;-r requirements.txt (line 3))
-  Downloading https://files.pythonhosted.org/packages/c5/10/369f50bcd4621b263927b0a1519987a04383d4a98fb10438042ad410cf88/singledispatch-3.4.0.3-py2.py3-none-any.whl</span>
+<span class="ansi-red-fg">Collecting singledispatch (from nltk-&gt;-r requirements.txt (line 3))</span>
+<span class="ansi-red-fg">  Downloading https://files.pythonhosted.org/packages/c5/10/369f50bcd4621b263927b0a1519987a04383d4a98fb10438042ad410cf88/singledispatch-3.4.0.3-py2.py3-none-any.whl</span>
 <span class="ansi-red-fg">Collecting webencodings (from html5lib-&gt;-r requirements.txt (line 5))
   Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl</span>
 <span class="ansi-red-fg">Building wheels for collected packages: nltk, train
@@ -14378,97 +14410,97 @@ Epoch: 5, BCELoss: 0.6594485998153686
   Stored in directory: /root/.cache/pip/wheels/4b/c8/24/b2343664bcceb7147efeb21c0b23703a05b23fcfeaceaa2a1e
   Running setup.py bdist_wheel for train: started
   Running setup.py bdist_wheel for train: finished with status &#39;done&#39;
-  Stored in directory: /tmp/pip-ephem-wheel-cache-3h0r7dm5/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3</span>
+  Stored in directory: /tmp/pip-ephem-wheel-cache-sqn4b8w9/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3</span>
 <span class="ansi-red-fg">Successfully built nltk train</span>
 <span class="ansi-red-fg">Installing collected packages: pytz, pandas, singledispatch, nltk, beautifulsoup4, webencodings, html5lib, train</span>
 <span class="ansi-red-fg">Successfully installed beautifulsoup4-4.6.3 html5lib-1.0.1 nltk-3.4 pandas-0.23.4 pytz-2018.7 singledispatch-3.4.0.3 train-1.0.0 webencodings-0.5.1</span>
-<span class="ansi-red-fg">2018-12-14 16:27:15,094 sagemaker-containers INFO     Invoking user script
+<span class="ansi-red-fg">2018-12-16 10:20:12,809 sagemaker-containers INFO     Invoking user script
 </span>
 <span class="ansi-red-fg">Training Env:
 </span>
 <span class="ansi-red-fg">{
-    &#34;user_entry_point&#34;: &#34;train.py&#34;,
-    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
-    &#34;resource_config&#34;: {
-        &#34;network_interface_name&#34;: &#34;ethwe&#34;,
-        &#34;hosts&#34;: [
-            &#34;algo-1&#34;
-        ],
-        &#34;current_host&#34;: &#34;algo-1&#34;
-    },
-    &#34;module_name&#34;: &#34;train&#34;,
-    &#34;hyperparameters&#34;: {
-        &#34;hidden_dim&#34;: 200,
-        &#34;epochs&#34;: 20
-    },
-    &#34;output_data_dir&#34;: &#34;/opt/ml/output/data&#34;,
-    &#34;log_level&#34;: 20,
-    &#34;input_config_dir&#34;: &#34;/opt/ml/input/config&#34;,
-    &#34;num_cpus&#34;: 4,
     &#34;channel_input_dirs&#34;: {
         &#34;training&#34;: &#34;/opt/ml/input/data/training&#34;
     },
-    &#34;output_intermediate_dir&#34;: &#34;/opt/ml/output/intermediate&#34;,
-    &#34;job_name&#34;: &#34;sagemaker-pytorch-2018-12-14-16-23-27-279&#34;,
-    &#34;input_data_config&#34;: {
-        &#34;training&#34;: {
-            &#34;TrainingInputMode&#34;: &#34;File&#34;,
-            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;,
-            &#34;RecordWrapperType&#34;: &#34;None&#34;
-        }
+    &#34;input_dir&#34;: &#34;/opt/ml/input&#34;,
+    &#34;user_entry_point&#34;: &#34;train.py&#34;,
+    &#34;output_data_dir&#34;: &#34;/opt/ml/output/data&#34;,
+    &#34;log_level&#34;: 20,
+    &#34;additional_framework_parameters&#34;: {},
+    &#34;hyperparameters&#34;: {
+        &#34;epochs&#34;: 20,
+        &#34;hidden_dim&#34;: 200
     },
-    &#34;current_host&#34;: &#34;algo-1&#34;,
+    &#34;num_gpus&#34;: 1,
     &#34;hosts&#34;: [
         &#34;algo-1&#34;
     ],
-    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
-    &#34;additional_framework_parameters&#34;: {},
+    &#34;input_config_dir&#34;: &#34;/opt/ml/input/config&#34;,
+    &#34;num_cpus&#34;: 4,
+    &#34;output_intermediate_dir&#34;: &#34;/opt/ml/output/intermediate&#34;,
+    &#34;job_name&#34;: &#34;sagemaker-pytorch-2018-12-16-10-16-29-190&#34;,
+    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
     &#34;output_dir&#34;: &#34;/opt/ml/output&#34;,
-    &#34;input_dir&#34;: &#34;/opt/ml/input&#34;,
-    &#34;num_gpus&#34;: 1,
+    &#34;module_name&#34;: &#34;train&#34;,
+    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
+    &#34;current_host&#34;: &#34;algo-1&#34;,
+    &#34;input_data_config&#34;: {
+        &#34;training&#34;: {
+            &#34;RecordWrapperType&#34;: &#34;None&#34;,
+            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;,
+            &#34;TrainingInputMode&#34;: &#34;File&#34;
+        }
+    },
     &#34;network_interface_name&#34;: &#34;ethwe&#34;,
-    &#34;module_dir&#34;: &#34;s3://sagemaker-eu-west-1-278275466460/sagemaker-pytorch-2018-12-14-16-23-27-279/source/sourcedir.tar.gz&#34;</span>
+    &#34;module_dir&#34;: &#34;s3://sagemaker-eu-west-1-278275466460/sagemaker-pytorch-2018-12-16-10-16-29-190/source/sourcedir.tar.gz&#34;,
+    &#34;resource_config&#34;: {
+        &#34;hosts&#34;: [
+            &#34;algo-1&#34;
+        ],
+        &#34;network_interface_name&#34;: &#34;ethwe&#34;,
+        &#34;current_host&#34;: &#34;algo-1&#34;
+    }</span>
 <span class="ansi-red-fg">}
 </span>
 <span class="ansi-red-fg">Environment variables:
 </span>
-<span class="ansi-red-fg">SM_HPS={&#34;epochs&#34;:20,&#34;hidden_dim&#34;:200}</span>
-<span class="ansi-red-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
-<span class="ansi-red-fg">SM_CURRENT_HOST=algo-1</span>
-<span class="ansi-red-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:20,&#34;hidden_dim&#34;:200},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2018-12-14-16-23-27-279&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-eu-west-1-278275466460/sagemaker-pytorch-2018-12-14-16-23-27-279/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;ethwe&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;ethwe&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
-<span class="ansi-red-fg">SM_INPUT_DIR=/opt/ml/input</span>
-<span class="ansi-red-fg">SM_FRAMEWORK_PARAMS={}</span>
-<span class="ansi-red-fg">SM_NUM_GPUS=1</span>
-<span class="ansi-red-fg">SM_OUTPUT_DIR=/opt/ml/output</span>
-<span class="ansi-red-fg">SM_USER_ENTRY_POINT=train.py</span>
-<span class="ansi-red-fg">SM_OUTPUT_DATA_DIR=/opt/ml/output/data</span>
-<span class="ansi-red-fg">SM_HP_EPOCHS=20</span>
-<span class="ansi-red-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
-<span class="ansi-red-fg">SM_MODULE_DIR=s3://sagemaker-eu-west-1-278275466460/sagemaker-pytorch-2018-12-14-16-23-27-279/source/sourcedir.tar.gz</span>
+<span class="ansi-red-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;20&#34;,&#34;--hidden_dim&#34;,&#34;200&#34;]</span>
 <span class="ansi-red-fg">SM_NUM_CPUS=4</span>
-<span class="ansi-red-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
-<span class="ansi-red-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
-<span class="ansi-red-fg">SM_MODEL_DIR=/opt/ml/model</span>
-<span class="ansi-red-fg">SM_CHANNELS=[&#34;training&#34;]</span>
-<span class="ansi-red-fg">SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate</span>
-<span class="ansi-red-fg">SM_LOG_LEVEL=20</span>
-<span class="ansi-red-fg">SM_INPUT_CONFIG_DIR=/opt/ml/input/config</span>
 <span class="ansi-red-fg">SM_HP_HIDDEN_DIM=200</span>
+<span class="ansi-red-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
+<span class="ansi-red-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:20,&#34;hidden_dim&#34;:200},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2018-12-16-10-16-29-190&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-eu-west-1-278275466460/sagemaker-pytorch-2018-12-16-10-16-29-190/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;ethwe&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;ethwe&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
+<span class="ansi-red-fg">SM_LOG_LEVEL=20</span>
+<span class="ansi-red-fg">SM_FRAMEWORK_PARAMS={}</span>
 <span class="ansi-red-fg">SM_NETWORK_INTERFACE_NAME=ethwe</span>
-<span class="ansi-red-fg">SM_RESOURCE_CONFIG={&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;ethwe&#34;}</span>
-<span class="ansi-red-fg">SM_MODULE_NAME=train</span>
+<span class="ansi-red-fg">SM_USER_ENTRY_POINT=train.py</span>
+<span class="ansi-red-fg">SM_HPS={&#34;epochs&#34;:20,&#34;hidden_dim&#34;:200}</span>
+<span class="ansi-red-fg">SM_MODEL_DIR=/opt/ml/model</span>
+<span class="ansi-red-fg">SM_HP_EPOCHS=20</span>
 <span class="ansi-red-fg">SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main</span>
-<span class="ansi-red-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;20&#34;,&#34;--hidden_dim&#34;,&#34;200&#34;]
+<span class="ansi-red-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
+<span class="ansi-red-fg">SM_NUM_GPUS=1</span>
+<span class="ansi-red-fg">SM_MODULE_DIR=s3://sagemaker-eu-west-1-278275466460/sagemaker-pytorch-2018-12-16-10-16-29-190/source/sourcedir.tar.gz</span>
+<span class="ansi-red-fg">SM_RESOURCE_CONFIG={&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;ethwe&#34;}</span>
+<span class="ansi-red-fg">SM_CHANNELS=[&#34;training&#34;]</span>
+<span class="ansi-red-fg">SM_OUTPUT_DIR=/opt/ml/output</span>
+<span class="ansi-red-fg">SM_CURRENT_HOST=algo-1</span>
+<span class="ansi-red-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
+<span class="ansi-red-fg">SM_OUTPUT_DATA_DIR=/opt/ml/output/data</span>
+<span class="ansi-red-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
+<span class="ansi-red-fg">SM_MODULE_NAME=train</span>
+<span class="ansi-red-fg">SM_INPUT_DIR=/opt/ml/input</span>
+<span class="ansi-red-fg">SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate</span>
+<span class="ansi-red-fg">SM_INPUT_CONFIG_DIR=/opt/ml/input/config
 </span>
 <span class="ansi-red-fg">Invoking script with the following command:
 </span>
 <span class="ansi-red-fg">/usr/bin/python -m train --epochs 20 --hidden_dim 200
 
 </span>
-
-2018-12-14 16:27:04 Training - Training image download completed. Training in progress.<span class="ansi-red-fg">Using device cuda.</span>
+<span class="ansi-red-fg">Using device cuda.</span>
 <span class="ansi-red-fg">Get train data loader.</span>
-<span class="ansi-red-fg">Model loaded with embedding_dim 32, hidden_dim 200, vocab_size 5000.</span>
+
+2018-12-16 10:20:03 Training - Training image download completed. Training in progress.<span class="ansi-red-fg">Model loaded with embedding_dim 32, hidden_dim 200, vocab_size 5000.</span>
 <span class="ansi-red-fg">Epoch: 1, BCELoss: 0.6686977087234964</span>
 <span class="ansi-red-fg">Epoch: 2, BCELoss: 0.5923603846102344</span>
 <span class="ansi-red-fg">Epoch: 3, BCELoss: 0.5081236301636209</span>
@@ -14488,12 +14520,12 @@ Epoch: 5, BCELoss: 0.6594485998153686
 <span class="ansi-red-fg">Epoch: 17, BCELoss: 0.21053452576909745</span>
 <span class="ansi-red-fg">Epoch: 18, BCELoss: 0.20161692706906065</span>
 <span class="ansi-red-fg">Epoch: 19, BCELoss: 0.1891723372498337</span>
-<span class="ansi-red-fg">Epoch: 20, BCELoss: 0.18184662564676635</span>
-<span class="ansi-red-fg">2018-12-14 16:33:08,172 sagemaker-containers INFO     Reporting training SUCCESS</span>
 
-2018-12-14 16:33:18 Uploading - Uploading generated training model
-2018-12-14 16:33:18 Completed - Training job completed
-Billable seconds: 418
+2018-12-16 10:26:02 Uploading - Uploading generated training model<span class="ansi-red-fg">Epoch: 20, BCELoss: 0.18184662564676635</span>
+<span class="ansi-red-fg">2018-12-16 10:25:58,516 sagemaker-containers INFO     Reporting training SUCCESS</span>
+
+2018-12-16 10:26:08 Completed - Training job completed
+Billable seconds: 449
 </pre>
 </div>
 </div>
@@ -14519,7 +14551,7 @@ Billable seconds: 418
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Deploy the trained model</span>
@@ -14540,8 +14572,8 @@ Billable seconds: 418
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>INFO:sagemaker:Creating model with name: sagemaker-pytorch-2018-12-14-16-23-27-279
-INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27-279
+<pre>INFO:sagemaker:Creating model with name: sagemaker-pytorch-2018-12-16-10-16-29-190
+INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-16-10-16-29-190
 </pre>
 </div>
 </div>
@@ -14552,7 +14584,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>---------------------------------------------------------------!</pre>
+<pre>----------------------------------------------------------------!</pre>
 </div>
 </div>
 
@@ -14570,7 +14602,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_X_len</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_X</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -14583,7 +14615,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We split the data into chunks and send each chunk seperately, accumulating the results.</span>
@@ -14604,7 +14636,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictions</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">test_X</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
@@ -14618,7 +14650,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">accuracy_score</span>
@@ -14635,13 +14667,13 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[47]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.844</pre>
+<pre>0.8536</pre>
 </div>
 
 </div>
@@ -14661,7 +14693,8 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong> The results are really similar with XGBoost. We could make our LSTM model deeper and train more to gain better accuracy. However, as we see XGBoost perform at this point with similar accuracy, it might be a better solution for sentiment analysis due to being more simpler model.</p>
+<p>LSTM would perhaps be better off at performing more difficult tasks than this imdb sentiment analysis... perhaps!</p>
 
 </div>
 </div>
@@ -14676,7 +14709,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_review</span> <span class="o">=</span> <span class="s1">&#39;The simplest pleasures in life are the best, and this film is one of them. Combining a rather basic storyline of love and adventure this movie transcends the usual weekend fair with wit and unmitigated charm.&#39;</span>
@@ -14704,7 +14737,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Convert test_review into a form usable by the model and save the results in test_data</span>
@@ -14729,7 +14762,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
@@ -14745,7 +14778,7 @@ INFO:sagemaker:Creating endpoint with name sagemaker-pytorch-2018-12-14-16-23-27
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[51]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
